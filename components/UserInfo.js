@@ -1,31 +1,33 @@
+
 export default class UserInfo {
   constructor({ nameSelector, aboutSelector, avatarSelector }) {
-    this._name = document.querySelector(nameSelector);
-    this._about = document.querySelector(aboutSelector);
+    this._nameElement = document.querySelector(nameSelector);
+    this._aboutElement = document.querySelector(aboutSelector);
     this._avatar = document.querySelector(avatarSelector);
+
+    this._userName = this._nameElement.textContent;
+    this._userAbout = this._aboutElement.textContent;
   }
 
   getUserInfo() {
-    const data = {};
-    (data.about = this._about.textContent),
-      (data.name = this._name.textContent);
-      (data.avatar = this._avatar.src)
-    return data;
+    return {
+      name: this._userName,
+      about: this._userAbout
+    };
   }
 
   setUserInfo(data) {
-    (this._name.textContent = data.name
-       ? data.name 
-       : this._name.textContent),
-      (this._about.textContent = data.about
-        ? data.about
-        : this._about.textContent);
-        (this._userId = data._id)
+    if (data.name) {
+      this._userName = data.name;
+      this._nameElement.textContent = data.name;
+    }
+    if (data.about) {
+      this._userAbout = data.about;
+      this._aboutElement.textContent = data.about;
+    }
   }
 
-  setUserAvatar(data) {
-    this._avatar.src = data.avatar 
-    ? data.avatar 
-    : this._avatar.src;
+  setUserAvatar(link) {
+    if (link) this._avatar.src = link;
   }
 }
