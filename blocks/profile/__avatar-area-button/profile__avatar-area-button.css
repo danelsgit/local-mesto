@@ -1,0 +1,17 @@
+.profile__avatar-area-button { 
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        position: absolute;
+        background: none;
+        border: none;
+        border-radius: 50%;
+        
+        }
+        
+        .profile__avatar-area-button:hover {
+          cursor: pointer;
+          opacity: 0.8;
+          background: rgba(0, 0, 0, 0.8) url('../../../images/Vector-avatar.svg') no-repeat center;
+          
+}
