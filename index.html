@@ -85,6 +85,109 @@
         </form>
       </div>
     </div>
+<!-- cardCreateHolder-->
+    <div class="popup popup_type_create-card" aria-label="создание-карточки">
+      <div class="popup__container popup__container_type_create-card">
+        <h2 class="popup__title">Новое место</h2>
+        <button class="popup__close-button" type="button"></button>
+        <form
+          class="popup__form"
+          name="card-create-form"
+          id="card-create-form"
+          novalidate
+        >
+          <label class="popup__field">
+            <input
+              class="popup__input popup__input_type_place-name"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Название"
+              required
+              minlength="2"
+              maxlength="30"
+            />
+            <span class="name-error popup__input-error"></span>
+          </label>
+          <label class="popup__field">
+            <input
+              class="popup__input popup__input_type_link"
+              id="link"
+              name="link"
+              type="url"
+              placeholder="Ссылка на картинку"
+              required
+            />
+            <span class="link-error popup__input-error"></span>
+          </label>
+          <button class="popup__submit" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <!-- card template-->
+    <template id="template-card">
+      <article class="grid-net__item">
+        <div class="grid-net__item-image-box">
+          <img class="grid-net__item-image" alt="просторы" />
+        </div>
+        <button class="grid-net__item-button-delete" type="delete"></button>
+        <div class="grid-net__item-box">
+          <h2 class="grid-net__item-title"></h2>
+          <div class="grid-net__item-user-box">
+            <button class="grid-net__item-button"></button>
+            <span class="grid-net__item-number"></span>
+          </div>
+        </div>
+      </article>
+    </template>
+    
+    <!-- popup_type_delete-card-->
+    <div class="popup popup_type_delete-card">
+      <div class="popup__container popup__container_type-delete">
+        <h2 class="popup__title popup__title_type_delete-card">Вы уверены ?</h2>
+        <button class="popup__close-button" type="button"></button>
+        <button class="popup__submit popup__submit_type-confirm" type="button">
+          Да
+        </button>
+      </div>
+    </div>
+    <!-- popup_type_profile-avatar-change-->
+    <div class="popup popup_type_profile-avatar">
+      <div class="popup__container popup__container_type-avatar">
+        <h2 class="popup__title">Обновить аватар</h2>
+        <button type="button" class="popup__close-button"></button>
+        <form
+          class="popup__form"
+          name="avatar-form"
+          id="avatar-form"
+          novalidate
+        >
+          <label class="popup__field">
+            <input
+              class="popup__input popup__input_type_avatar"
+              name="avatar"
+              id="avatar"
+              minlength="5"
+              maxlength="200"
+              type="url"
+              required
+              placeholder="Ссылка"
+            />
+            <span class="avatar-error popup__input-error"></span>
+          </label>
+          <button type="submit" class="popup__submit">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./pages/index.js"></script>
+
+    <div class="popup popup_type_image-overlay">
+      <div class="popup__container popup__container_type_image">
+        <button class="popup__close-button" type="button"></button>
+        <img class="popup__image" src="#" alt="">
+        <span class="popup__span"></span>
+      </div>
+    </div>
     </body> 
     
 </html>
