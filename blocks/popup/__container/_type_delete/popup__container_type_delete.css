@@ -1,0 +1,17 @@
+@media screen and (min-width: 1000px) { 
+    .popup__container_type-delete { 
+    min-height: 181px;
+    min-width: 430px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 999px){ 
+    .popup__container_type-delete {
+     min-width: 280px;
+     min-height: 319px;
+    }
+}

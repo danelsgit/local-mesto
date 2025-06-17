@@ -1,0 +1,11 @@
+@media screen and (min-width: 1000px) {
+        .popup__title_type_delete-card  {
+         margin: 10px 0 18px 36px;
+        }
+    }
+    
+    @media screen and (min-width: 320px) and (max-width: 999px) {
+        .popup__title_type_delete-card  {
+         margin: 25px auto 75px;
+        }
+    }
