@@ -1,0 +1,9 @@
+.page {
+    max-width: 1280px;
+    min-width: 320px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Inter', serif, sans-serif;
+    background-color: black;
+    margin: 0 auto;
+   }
