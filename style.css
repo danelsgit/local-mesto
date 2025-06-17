@@ -1,0 +1,32 @@
+@import url("blocks/page/page.css");
+
+@import url("blocks/header/header.css");
+@import url("blocks/header/__logo/header__logo.css");
+
+@import url("blocks/profile/profile.css");
+@import url("blocks/grid-net/grid-net.css");
+
+@import url("blocks/footer/__copyright/footer__copyright.css");
+@import url("blocks/footer/footer.css");
+
+@import url("blocks/popup/popup.css");
+@import url("blocks/popup/__container/_type-avatar/popup__container_type-avatar.css");
+@import url("blocks/popup/__close-button/popup__close-button.css");
+@import url("blocks/popup/__container/popup__container.css");
+@import url("blocks/popup/__form/popup__form.css");
+@import url("blocks/popup/__input/popup__input.css");
+@import url("blocks/popup/__input/_type/_active/popup__input_type_active.css");
+@import url("blocks/popup/__submit/popup__submit.css");
+@import url("blocks/popup/__title/popup__title.css");
+@import url("blocks/popup/__image/popup__image.css");
+@import url("blocks/popup/__span/image-overlay__span.css");
+@import url("blocks/popup/_active/popop_active.css");
+@import url("blocks/popup/__overlay-holder/popup__overlay-holder.css");
+@import url("blocks/popup/__submit/_inactive/popup__submit_inactive.css");
+@import url("blocks/popup/__field/popup__field.css");
+@import url("blocks/popup/__title/_type_delete-card/popup__title_type_delete-card.css");
+@import url("blocks/popup/__container/_type_delete/popup__container_type_delete.css");
+@import url("blocks/popup/__input-error/popup__input-error.css");
+@import url("blocks/popup/__input-error/_active/popup__input-error_active.css");
+@import url("blocks/popup/__input/_type/_error/popup__input_type_error.css");
+@import url("blocks/popup/__submit/_type-confirm/popup__submit_type-confirm.css");
