@@ -4,7 +4,28 @@
 @import url("blocks/header/__logo/header__logo.css");
 
 @import url("blocks/profile/profile.css");
+@import url("blocks/profile/__avatar/profile__avatar.css");
+@import url("blocks/profile/__button/profile__button.css");
+@import url("blocks/profile/__info-box/profile__info-box.css");
+@import url("blocks/profile/__info-button/profile__info-button.css");
+@import url("blocks/profile/__info-fullname/profile__info-fullname.css");
+@import url("blocks/profile/__info-occupation/profile__info-occupation.css");
+@import url("blocks/profile/__info/profile__info.css");
+@import url("blocks/profile/__avatar-area/profile__avatar-area.css");
+@import url("blocks/profile/__avatar-area-button/profile__avatar-area-button.css");
+
+@import url("blocks/grid-net/__item-box/grid-net__item-box.css");
+@import url("blocks/grid-net/__item-button/grid-net__item-button.css");
+@import url("blocks/grid-net/__item-button/_active/grid-net__item-button_active.css");
+@import url("blocks/grid-net/__item-image/grid-net__item-image.css");
+@import url("blocks/grid-net/__item-title/grid-net__item-title.css");
+@import url("blocks/grid-net/__item-number/grid-net__item-number.css");
+@import url("blocks/grid-net/__item-user-box/grid-net__item-user-box.css");
+@import url("blocks/grid-net/__item/grid-net__item.css");
+@import url("blocks/grid-net/__item-image/_active/grid-net__item-image_active.css");
+@import url("blocks/grid-net/__item-button-delete/grid-net__item-button-delete.css");
 @import url("blocks/grid-net/grid-net.css");
+@import url("blocks/grid-net/__item-image-box/grid-net__item-image-box.css");
 
 @import url("blocks/footer/__copyright/footer__copyright.css");
 @import url("blocks/footer/footer.css");
