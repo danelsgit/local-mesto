@@ -1,0 +1,12 @@
+.grid-net__item-title { 
+    margin: 0px;
+    font-family: 'Inter', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 900;
+     font-size: 24px;
+     line-height: 29px;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     overflow: hidden;
+     max-width: 180px;
+}

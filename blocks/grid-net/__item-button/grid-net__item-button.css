@@ -1,0 +1,14 @@
+.grid-net__item-button {
+    background-image: url('../../../images/Vector2.svg');
+    width: 22px;
+    height: 19px;
+    background-color: #fff;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    transition: opacity 0.5s linear;
+}
+
+.grid-net__item-button:hover {
+    opacity: 0.5;
+   }
