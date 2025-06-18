@@ -1,4 +1,6 @@
 import { Card } from "../components/Card.js";
+import { FormValidator } from "../components/FormValidator.js";
+import { Section } from "../components/Section.js";
 import UserInfo from "../components/UserInfo.js";
 import {
   profileButton,
@@ -9,6 +11,9 @@ import {
   avatarButton,
   initialCards
 } from "../utils/constants.js";
+import PopupWithForm from "../components/PopupWithForm.js";
+import PopupWithImage from "../components/PopupWithImage.js";
+import PopupWithDelete from "../components/PopupWithDelete.js";
 
 const userId = 'demo-user';
 
@@ -27,8 +32,17 @@ const userData = new UserInfo({
   avatarSelector: ".profile__avatar",
 });
 
-userData.setUserInfo({ name: 'Имя', about: 'Описание профиля' });
+userData.setUserInfo({ name: 'Имя Пользователя', about: 'Описание профиля' });
 userData.setUserAvatar('./images/placeholder.jpg');
+
+const popupWithImage = new PopupWithImage(".popup_type_image-overlay");
+popupWithImage.setEventListeners();
+
+const popupWithDelete = new PopupWithDelete(".popup_type_delete-card", (card) => {
+  card.removeCardElement();
+  popupWithDelete.close();
+});
+popupWithDelete.setEventListeners();
 
 function createCard(cardData) {
   const newCard = new Card(
@@ -47,3 +61,32 @@ function createCard(cardData) {
   return newCard.generateCard();
 }
 
+// Обработка попапа редактирования профиля
+const popupEditProfile = new PopupWithForm(".popup_type_profile", (formData) => {
+  userData.setUserInfo({
+    name: formData["username"],
+    about: formData["occupation"],
+  });
+  popupEditProfile.close();
+});
+popupEditProfile.setEventListeners();
+
+profileEditButton.addEventListener("click", () => {
+  const currentUser = userData.getUserInfo();
+  nameInput.value = currentUser.name;
+  jobInput.value = currentUser.about;
+  popupEditProfile.open();
+});
+
+// Отрисовка карточек из constants.js
+const cardSection = new Section(
+  {
+    items: initialCards.map(card => ({ ...card, owner: { _id: userId } })),
+    renderer: (cardData) => {
+      const card = createCard(cardData);
+      cardSection.addItem(card);
+    },
+  },
+  ".grid-net"
+);
+cardSection.renderItems();
