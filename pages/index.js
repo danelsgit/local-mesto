@@ -90,3 +90,30 @@ const cardSection = new Section(
   ".grid-net"
 );
 cardSection.renderItems();
+
+const popupAddCard = new PopupWithForm(".popup_type_create-card", (formData) => {
+  const newCardData = {
+    name: formData["name"],
+    link: formData["link"],
+    owner: { _id: userId },
+  };
+  const newCard = createCard(newCardData);
+  cardSection.addItem(newCard);
+  popupAddCard.close();
+});
+popupAddCard.setEventListeners();
+
+profileButton.addEventListener("click", () => {
+  popupAddCard.open();
+});
+
+const popupAvatar = new PopupWithForm(".popup_type_profile-avatar", (formData) => {
+  userData.setUserAvatar(formData["avatar"]);
+  popupAvatar.close();
+});
+popupAvatar.setEventListeners();
+
+avatarButton.addEventListener("click", () => {
+  popupAvatar.open();
+});
+
