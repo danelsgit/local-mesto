@@ -110,7 +110,7 @@
      width: 150px;
      justify-self: flex-end;
      margin-left: auto;
-     background-image: url(../../../images/addButton.svg);
+     background-image: url(/images/addButton.svg);
     }
 }
 
@@ -118,7 +118,7 @@
     .profile__button {
      width: 282px;
      margin-top: 36px;
-     background-image: url(../../../images/addButtonMobile.svg);
+     background-image: url(/images/addButtonMobile.svg);
     }
 }
 
@@ -145,7 +145,7 @@
 
 /* --- ../blocks/profile/__info-button/profile__info-button.css --- */
 .profile__info-button { 
-    background-image: url(../../../images/EditButton.svg);
+    background-image: url(/images/EditButton.svg);
     background-color: black;
     border: none;
     cursor: pointer;
@@ -320,7 +320,7 @@
         .profile__avatar-area-button:hover {
           cursor: pointer;
           opacity: 0.8;
-          background: rgba(0, 0, 0, 0.8) url('../../../images/Vector-avatar.svg') no-repeat center;
+          background: rgba(0, 0, 0, 0.8) url('/images/Vector-avatar.svg') no-repeat center;
           
 }
 
@@ -352,7 +352,7 @@
 
 /* --- ../blocks/grid-net/__item-button/grid-net__item-button.css --- */
 .grid-net__item-button {
-    background-image: url('../../../images/Vector2.svg');
+    background-image: url('/images/Vector2.svg');
     width: 22px;
     height: 19px;
     background-color: #fff;
@@ -370,7 +370,7 @@
 
 /* --- ../blocks/grid-net/__item-button/_active/grid-net__item-button_active.css --- */
 .grid-net__item-button_active {
-    background-image: url(../../../../images/Union.svg);
+    background-image: url(/images/Union.svg);
     width: 22px;
     height: 19px;
     background-color: #fff;
@@ -437,7 +437,7 @@ gap: 3px;
 
 /* --- ../blocks/grid-net/__item-button-delete/grid-net__item-button-delete.css --- */
 .grid-net__item-button-delete {
-    background-image: url(../../../images/Group.svg);
+    background-image: url(/images/Group.svg);
     position: absolute;
     border: 0;
     right: 20px;
@@ -538,7 +538,7 @@ gap: 3px;
 
 /* --- ../blocks/popup/__close-button/popup__close-button.css --- */
 .popup__close-button { 
-    background-image: url(../../../images/CloseIcon.svg);
+    background-image: url(/images/CloseIcon.svg);
     border: 0;
     position: absolute;
     cursor: pointer;
